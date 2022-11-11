@@ -109,8 +109,6 @@ public class Assignment_3 {
 		}
 		default:
 			System.out.println("Invalid Input ");
-
-
 		}
 	}
 
