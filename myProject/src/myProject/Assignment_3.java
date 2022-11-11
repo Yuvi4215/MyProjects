@@ -1,6 +1,5 @@
 package myProject;
 import java.util.Scanner;
-
 class Guesser{
 int guess;
 	int guesser() {
@@ -35,7 +34,7 @@ class Player{
 		Scanner sc= new Scanner(System.in);
 		int[] players = new int[i];
 		for(int j=0;j<i;j++) {
-			System.out.println("Player number: "+(j+1)+" input your guess.");
+			System.out.println("Player number:"+(j+1)+" input your guess.");
 			players[j]= sc.nextInt();
 		}
 		return players;
@@ -50,14 +49,14 @@ class Umpire{
 		Guesser g= new Guesser();
 		gNum= g.guesser();
 		if(gNum==0) {
-			System.out.println("Programm is turminated.");
+			System.out.println("Programm is terminated.");
 		}else {
 			int index= i;
 			Player p= new Player();
 			int[] players=p.input(index);
 		for(int z=0; z<players.length;z++) {
 			if(gNum == players[z]) {
-				System.out.println("Player number: "+(z+1)+" have Guessed number right.");
+				System.out.println("Player number:"+(z+1)+" have Guessed number right.");
 			count++;
 			}
 		}
