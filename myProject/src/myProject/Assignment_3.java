@@ -6,7 +6,7 @@ class Guesser{
 int guess;
 	int guesser() {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Press 1 to input the Guess from user input:"+'\n'+"Press 2 to get Computer genrated Guess:");
+		System.out.println("Press:1 to input the Guess from user input:"+'\n'+"Press:2 to get Computer genrated Guess:");
 		byte valve= sc.nextByte();
 		if(valve==1) {
 			System.out.println("Guesser please input your number: "+'\n'+"Input number should be withine the range of 1 to 9");
@@ -76,7 +76,7 @@ public class Assignment_3 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter 1 to continue "+'\n'+"Enter 2 to Exit");
+		System.out.println("Enter:1 to continue "+'\n'+"Enter:2 to Exit");
 		int valve= sc.nextInt();
 		switch(valve){
 		case 1:{
@@ -84,14 +84,14 @@ public class Assignment_3 {
 				System.out.println();
 				System.out.println();
 				Umpire u= new Umpire();
-				System.out.println("input number of players");
+				System.out.println("Input number of players");
 				int i= sc.nextInt();
 				u.collection_result(i);
 				System.out.println();
 				System.out.println();
 				System.out.println();
 				System.out.println();
-				System.out.println("Enter following command"+'\n'+"1 --> to continue"+'\n'+"2 --> to Exit");
+				System.out.println("Enter following command"+'\n'+"1: --> to continue"+'\n'+"2: --> to Exit");
 				int condition=sc.nextInt();
 				if(condition==1) {
 				continue;
