@@ -1,5 +1,4 @@
 package myProject;
-
 import java.util.Scanner;
 
 class Guesser{
@@ -14,7 +13,7 @@ int guess;
 			if(guess<10 && guess>0) {
 				return guess;
 			}else {
-				System.out.println("input is invalid");
+				System.out.println("Input is invalid");
 				return 0;
 			}
 	}else if(valve==2) {
@@ -26,7 +25,7 @@ int guess;
 			return guess;
 		}
 	}{
-		System.out.println("Input is invalid");
+		System.out.println("Input is Invalid");
 		return 0;
 	}
 }
@@ -64,7 +63,7 @@ class Umpire{
 		}
 		if(count==0) {
 			System.out.println("Guessed number was: "+gNum);
-			System.out.println("No player have won.");
+			System.out.println("All playes lost.");
 		}		
 		}
 	
